@@ -43,6 +43,7 @@ El objetivo es tener una **documentación clara, profesional y reutilizable**.
 ---
 
 ## 📂 **Estructura del Repositorio**
+```
 tareas-despliegue-aplicaciones-web/
 │
 ├── tema1-servidores-web/
@@ -57,6 +58,8 @@ tareas-despliegue-aplicaciones-web/
 │   └── README.md
 │
 └── trabajo-1er-trimestre/
+```
+
 
 
 > ✨ *Cada actividad tendrá su propio README con capturas, explicaciones y ejemplos de configuración.*

@@ -46,17 +46,18 @@ El objetivo es tener una **documentación clara, profesional y reutilizable**.
 tareas-despliegue-aplicaciones-web/
 │
 ├── tema1-servidores-web/
-│ ├── activity1-instalacion-apache/
-│ ├── activity2-configuracion-basica/
-│ ├── activity5-directiva-directory/
-│ ├── activity6-expresiones-regulares/
-│ ├── activity7-rewrite/
-│ ├── activity8-virtualhost/
-│ ├── activity9-authentication/
-│ ├── activity10-ssl/
-│ └── README.md
+│   ├── activity1-instalacion-apache/
+│   ├── activity2-configuracion-basica/
+│   ├── activity5-directiva-directory/
+│   ├── activity6-expresiones-regulares/
+│   ├── activity7-rewrite/
+│   ├── activity8-virtualhost/
+│   ├── activity9-authentication/
+│   ├── activity10-ssl/
+│   └── README.md
 │
 └── trabajo-1er-trimestre/
+
 
 > ✨ *Cada actividad tendrá su propio README con capturas, explicaciones y ejemplos de configuración.*
 

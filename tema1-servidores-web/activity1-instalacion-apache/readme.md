@@ -1,115 +1,111 @@
-# 📘 Instalación y Configuración Básica de Apache en Ubuntu
+# 📘 Activity #1 — Puesta en marcha de Apache
 
-Este documento explica paso a paso cómo instalar, verificar y gestionar el servidor web Apache2 en Ubuntu. Incluye comandos, explicaciones y secciones donde puedes colocar tus capturas de pantalla.
+## 🔧 1. Arrancar el servicio Apache
 
-## 🔧 1. Actualizar repositorios
-
-Antes de instalar cualquier paquete, es recomendable actualizar la lista de repositorios y los paquetes del sistema.
-
-sudo apt update
-sudo apt upgrade -y
-
-
-📸 Captura 1 (opcional): Salida del comando apt update.
-
-## 🌐 2. Instalar Apache2
-sudo apt install apache2 -y
-
-
-📸 Captura 2: Instalación completa de Apache en la terminal.
-
-## 🚀 3. Comprobar el estado del servicio Apache
+```bash
 sudo systemctl status apache2
+```
 
+Instalar si no está:
 
-El estado debe aparecer como:
+```bash
+sudo apt update
+sudo apt install apache2 -y
+```
 
-active (running)
+Iniciar:
 
-
-📸 Captura 3: Salida del servicio mostrando que Apache está activo.
-
-## 🌍 4. Probar funcionamiento en el navegador
-
-Para verificar que Apache está sirviendo contenido, abre:
-
-http://localhost
-
-
-O consulta tu IP local:
-
-hostname -I
-
-
-📸 Captura 4: Página por defecto de Apache en el navegador.
-
-## 🧭 5. Directorio raíz del servidor web
-
-El contenido que Apache sirve por defecto se encuentra en:
-
-/var/www/html/
-
-
-Archivo principal:
-
-index.html
-
-
-📸 Captura 5: Vista del directorio /var/www/html/.
-
-## ⚙️ 6. Archivos de configuración principales
-
-Configuración global de Apache:
-
-/etc/apache2/apache2.conf
-
-
-Sitios disponibles:
-
-/etc/apache2/sites-available/
-
-
-Archivo del sitio por defecto:
-
-000-default.conf
-
-
-📸 Captura 6: Contenido del directorio sites-available.
-
-## 🔥 7. Comandos de gestión de Apache
-▶️ Iniciar Apache
+```bash
 sudo systemctl start apache2
+```
 
-⏸️ Detener Apache
-sudo systemctl stop apache2
+Habilitar inicio automático:
 
-🔄 Reiniciar Apache
-sudo systemctl restart apache2
+```bash
+sudo systemctl enable apache2
+```
 
+---
 
-📸 Captura 7 (opcional): Ejemplo usando uno de los comandos.
+## 🔍 2. Comprobar que Apache funciona
 
-## 🔒 8. Configurar Firewall (UFW) (solo si lo tienes activo)
+```bash
+hostname -I
+```
 
-Permitir tráfico HTTP:
+Acceder desde navegador:
 
-sudo ufw allow 'Apache'
+```
+http://localhost
+```
 
+o
 
-Comprobar estado:
+```
+http://TU_IP
+```
 
-sudo ufw status
+---
 
+## 🌍 3. Comprobar puertos de escucha
 
-📸 Captura 8: Firewall mostrando Apache permitido.
-
-## 📡 9. Verificar puertos activos de Apache
+```bash
 sudo ss -tulnp | grep apache
+```
 
+---
 
-📸 Captura 9: Puertos abiertos (normalmente el 80).
+## 📁 4. Directorio raíz
 
-## 🧹 10. Desinstalar Apache (opcional)
-sudo apt remove apache2 -y
-sudo apt purge apache2 -y
-sudo apt autoremove -y
+```
+/var/www/html/
+```
+
+Ver contenido:
+
+```bash
+ls -l /var/www/html/
+```
+
+Editar index:
+
+```bash
+sudo nano /var/www/html/index.html
+```
+
+---
+
+## ⚙️ 5. Archivo de configuración principal
+
+```
+/etc/apache2/apache2.conf
+```
+
+Editar:
+
+```bash
+sudo nano /etc/apache2/apache2.conf
+```
+
+---
+
+## 🔥 6. Comandos de gestión
+
+```bash
+sudo systemctl restart apache2
+sudo systemctl reload apache2
+sudo systemctl stop apache2
+```
+
+---
+
+## 🔒 7. Firewall UFW
+
+```bash
+sudo ufw allow 'Apache'
+sudo ufw status
+```
+
+---
+
+## ✔️ Ejercicio 1 completado

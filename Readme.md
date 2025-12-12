@@ -117,13 +117,13 @@ tareas-despliegue-aplicaciones-web/
 
 | Paso | Descripción | Enlace |
 |-----|-------------|--------|
-| **Paso 1** | Instalación y configuración de Apache + VirtualHosts | [`Paso1-Apache`](./trabajo-1er-trimestre/Paso1-Apache/) |
-| **Paso 2** | Instalación de PHP y MySQL | [`Paso2-PHP-MySQL`](./trabajo-1er-trimestre/Paso2-PHP-MySQL/) |
-| **Paso 3** | Instalación y configuración de WordPress | [`Paso3-WordPress`](./trabajo-1er-trimestre/Paso3-WordPress/) |
-| **Paso 4** | Aplicación Python con WSGI en Apache | [`Paso4-Python-WSGI`](./trabajo-1er-trimestre/Paso4-Python-WSGI/) |
-| **Paso 5** | Protección mediante autenticación básica | [`Paso5-Autenticacion`](./trabajo-1er-trimestre/Paso5-Autenticacion/) |
-| **Paso 6** | Monitorización del servidor con AWStats | [`Paso6-AWStats`](./trabajo-1er-trimestre/Paso6-AWStats/) |
-| **Paso 7** | Segundo servidor web con Nginx, PHP y phpMyAdmin | [`Paso7-Segundo-Servidor`](./trabajo-1er-trimestre/Paso7-Segundo-Servidor/) |
+| **Paso 1** | Instalación y configuración de Apache + VirtualHosts | [`Paso1-Apache`](./trabajo-1er-trimestre/Paso1/) |
+| **Paso 2** | Instalación de PHP y MySQL | [`Paso2-PHP-MySQL`](./trabajo-1er-trimestre/Paso2/) |
+| **Paso 3** | Instalación y configuración de WordPress | [`Paso3-WordPress`](./trabajo-1er-trimestre/Paso3/) |
+| **Paso 4** | Aplicación Python con WSGI en Apache | [`Paso4-Python-WSGI`](./trabajo-1er-trimestre/Paso4/) |
+| **Paso 5** | Protección mediante autenticación básica | [`Paso5-Autenticacion`](./trabajo-1er-trimestre/Paso5) |
+| **Paso 6** | Monitorización del servidor con AWStats | [`Paso6-AWStats`](./trabajo-1er-trimestre/Paso6/) |
+| **Paso 7** | Segundo servidor web con Nginx, PHP y phpMyAdmin | [`Paso7-Segundo-Servidor`](./trabajo-1er-trimestre/Paso7/) |
 
 ---
 Incluye:

@@ -8,7 +8,7 @@
 ```bash
 sudo apt install php libapache2-mod-php php-mysql
 ```
-![instalación php](capturas/01-instalacion-php.png)
+![instalación php](Capturas/01-instalacion-php.png)
 
 ---
 

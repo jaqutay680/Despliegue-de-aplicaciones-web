@@ -5,7 +5,7 @@
 
 <img src="https://img.shields.io/badge/Despliegue-Aplicaciones%20Web-blue?style=for-the-badge">
 <img src="https://img.shields.io/badge/Curso-2025%2F2026-green?style=for-the-badge">
-<img src="https://img.shields.io/badge/Alumno-José%20Ángel%20Aquino-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/Alumno-José%20Ángel%20Aquino%20Tayllefert-orange?style=for-the-badge">
 
 ---
 

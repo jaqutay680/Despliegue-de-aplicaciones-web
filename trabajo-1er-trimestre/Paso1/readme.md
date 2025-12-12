@@ -38,7 +38,7 @@ sudo nano /etc/hosts
 127.0.0.1 departamentos.centro.intranet
 ```
 
-![hosts](capturas/04-hosts.png)
+![hosts](capturas/04-host.png)
 
 ---
 

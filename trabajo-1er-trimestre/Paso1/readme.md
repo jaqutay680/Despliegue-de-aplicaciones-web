@@ -8,7 +8,7 @@
 ```bash
 sudo apt update
 ```
-![apt update](capturas/paso1/01-apt-update.png)
+![apt update](capturas/01-apt-update.png)
 
 ---
 
@@ -16,7 +16,7 @@ sudo apt update
 ```bash
 sudo apt install apache2
 ```
-![instalación apache](capturas/paso1/02-instalacion-apache.png)
+![instalación apache](capturas/02-instalacion-apache.png)
 
 ---
 
@@ -24,7 +24,7 @@ sudo apt install apache2
 ```bash
 sudo systemctl status apache2
 ```
-![estado apache](capturas/paso1/03-estado-apache.png)
+![estado apache](capturas/03-estado-apache.png)
 
 ---
 
@@ -38,7 +38,7 @@ sudo nano /etc/hosts
 127.0.0.1 departamentos.centro.intranet
 ```
 
-![hosts](capturas/paso1/04-hosts.png)
+![hosts](capturas/04-hosts.png)
 
 ---
 
@@ -48,7 +48,7 @@ sudo mkdir -p /var/www/centro
 sudo mkdir -p /var/www/departamentos
 ```
 
-![directorios](capturas/paso1/05-directorios.png)
+![directorios](capturas/05-directorios.png)
 
 ---
 
@@ -58,7 +58,7 @@ sudo chown -R www-data:www-data /var/www/centro /var/www/departamentos
 sudo chmod -R 755 /var/www/centro /var/www/departamentos
 ```
 
-![permisos](capturas/paso1/06-permisos.png)
+![permisos](capturas/06-permisos.png)
 
 ---
 
@@ -78,7 +78,7 @@ sudo nano /etc/apache2/sites-available/centro.intranet.conf
 </VirtualHost>
 ```
 
-![vhost centro](capturas/paso1/07-vhost-centro.png)
+![vhost centro](capturas/07-vhost-centro.png)
 
 ---
 
@@ -98,7 +98,7 @@ sudo nano /etc/apache2/sites-available/departamentos.centro.intranet.conf
 </VirtualHost>
 ```
 
-![vhost departamentos](capturas/paso1/08-vhost-departamentos.png)
+![vhost departamentos](capturas/08-vhost-departamentos.png)
 
 ---
 
@@ -110,16 +110,16 @@ sudo a2dissite 000-default.conf
 sudo systemctl reload apache2
 ```
 
-![activación sitios](capturas/paso1/09-activacion-sitios.png)
+![activación sitios](capturas/09-activacion-sitios.png)
 
 ---
 
 ### 1.10 Comprobación en el navegador
 - http://centro.intranet  
-![centro navegador](capturas/paso1/10-centro-navegador.png)
+![centro navegador](capturas/10-centro-navegador.png)
 
 - http://departamentos.centro.intranet  
-![departamentos navegador](capturas/paso1/11-departamentos-navegador.png)
+![departamentos navegador](capturas/11-departamentos-navegador.png)
 
 ---
 

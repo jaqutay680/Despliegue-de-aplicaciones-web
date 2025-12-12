@@ -58,6 +58,33 @@ tareas-despliegue-aplicaciones-web/
 │   └── README.md
 │
 └── trabajo-1er-trimestre/
+├── Paso1-Apache/
+│   ├── README.md
+│   └── capturas/
+│
+├── Paso2-PHP-MySQL/
+│   ├── README.md
+│   └── capturas/
+│
+├── Paso3-WordPress/
+│   ├── README.md
+│   └── capturas/
+│
+├── Paso4-Python-WSGI/
+│   ├── README.md
+│   └── capturas/
+│
+├── Paso5-Autenticacion/
+│   ├── README.md
+│   └── capturas/
+│
+├── Paso6-AWStats/
+│   ├── README.md
+│   └── capturas/
+│
+├── Paso7-Segundo-Servidor/
+│   ├── README.md
+│   └── capturas/
 ```
 
 

@@ -40,7 +40,7 @@ cd ~/servidor-web
 - Conectividad externa verificada.  
 - Estructura de proyecto creada en `~/servidor-web/`.  
 
-🖼️ `images/paso1.png`
+![Configuración inicial del sistema](images/paso1.png)
 
 ---
 
@@ -68,7 +68,7 @@ sudo systemctl reload apache2
 - MariaDB activo y accesible.  
 - phpMyAdmin disponible en `/phpmyadmin`.  
 
-🖼️ `images/paso2.png`
+![Stack LAMP + phpMyAdmin](images/paso2.png)
 
 ---
 
@@ -99,7 +99,7 @@ sudo mysql -e "SELECT User FROM mysql.user WHERE User='cliente1_user';"
 - Base de datos `cliente1_db` con usuario `cliente1_user` y contraseña segura generada.  
 - VirtualHost habilitado (resolución DNS completa en paso siguiente).  
 
-🖼️ `images/paso3.png`
+![Script de automatización de clientes](images/paso3.png)
 
 ---
 
@@ -124,7 +124,7 @@ sudo systemctl reload apache2
 - SSH/SFTP operativo para administración remota segura.  
 - Python 3 ejecutándose en Apache vía `mod_wsgi` en ruta `/app`.  
 
-🖼️ `images/paso4.png`
+![FTP con TLS + SSH/SFTP + Python con Apache](images/paso4.png)
 
 ---
 
@@ -181,7 +181,7 @@ El script ahora inyecta automáticamente registros A y PTR en las zonas BIND9 al
 - Resolución inversa (`192.168.1.135` → `cliente1.marisma.local`) verificada.  
 - Inyección automática de registros DNS en nuevos clientes.  
 
-🖼️ `images/paso5.png`
+![Configuración de DNS con BIND9](images/paso5.png)
 
 ---
 
@@ -305,7 +305,7 @@ curl -s http://cliente2.marisma.local -H "Host: cliente2.marisma.local" | head -
 - ✓ Python ejecutándose en Apache2 vía mod_wsgi  
 - ✓ Script `crear_cliente.sh` completamente automatizado y funcional  
 
-🖼️ `images/paso6.png`
+![Pruebas integrales y verificación final](images/paso6.png)
 
 ---
 
@@ -671,6 +671,7 @@ Este proyecto es un trabajo académico para la asignatura **Despliegue de Aplica
 ---
 
 **Última actualización:** Mayo 2026  
+**Estado:** ✅ Completado y operativo  
 **Versión:** 1.0 - Release
 
 ---

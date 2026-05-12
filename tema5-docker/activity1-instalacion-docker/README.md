@@ -136,11 +136,6 @@ Hello from Docker!
 
 This message shows that your installation appears to be working correctly.
 ...
-```
-
-![Ejecución de hello-world](images/hello-world-container.png)
-
----
 
 ## ✅ Verificaciones
 

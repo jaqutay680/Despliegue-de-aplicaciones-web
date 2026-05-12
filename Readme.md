@@ -10,7 +10,7 @@
 ---
 
 📚 **Repositorio dedicado a documentar todas las actividades, prácticas y configuraciones realizadas en la asignatura de _Despliegue de Aplicaciones Web_.**  
-Incluye explicaciones, ejemplos, capturas y configuraciones reales de Apache, VirtualHosts, SSL, Rewrite, permisos, DNS, etc.
+Incluye explicaciones, ejemplos, capturas y configuraciones reales de Apache, VirtualHosts, SSL, Rewrite, permisos, DNS, Docker, Docker Compose, etc.
 
 ---
 
@@ -21,10 +21,11 @@ Incluye explicaciones, ejemplos, capturas y configuraciones reales de Apache, Vi
 1. [📝 Descripción](#-descripción)
 2. [📂 Estructura del repositorio](#-estructura-del-repositorio)
 3. [🔥 Tema 1 – Servidores Web (Apache)](#-tema-1--servidores-web-apache)
-4. [📌 Trabajo del 1º Trimestre](#-trabajo-del-1º-trimestre)
-5. [📌 Trabajo del 2º Trimestre](#-trabajo-del-2º-trimestre)
-6. [🔧 Tecnologías utilizadas](#-tecnologías-utilizadas)
-7. [💬 Autor](#-autor)
+4. [🐳 Tema 5 – Docker y Containerización](#-tema-5--docker-y-containerización)
+5. [📌 Trabajo del 1º Trimestre](#-trabajo-del-1º-trimestre)
+6. [📌 Trabajo del 2º Trimestre](#-trabajo-del-2º-trimestre)
+7. [🔧 Tecnologías utilizadas](#-tecnologías-utilizadas)
+8. [💬 Autor](#-autor)
 
 ---
 
@@ -38,6 +39,9 @@ Incluye:
 - Configuración de seguridad (SSL, autenticación, permisos)
 - Reglas Rewrite con expresiones regulares
 - Servidor DNS local (BIND9)
+- **Docker y containerización**
+- **Docker Compose para aplicaciones multi-contenedor**
+- **Creación de imágenes Docker optimizadas**
 - Automatización con scripts bash
 - Tareas explicadas paso a paso con capturas
 
@@ -59,6 +63,27 @@ tareas-despliegue-aplicaciones-web/
 │   ├── activity9-authentication/
 │   ├── activity10-ssl/
 │   └── README.md
+│
+├── tema5-docker/
+│   ├── README.md
+│   ├── activity1-instalacion-docker/
+│   │   ├── README.md
+│   │   └── images/ (6 capturas)
+│   ├── activity2-introduccion-contenedores/
+│   │   ├── README.md
+│   │   └── images/ (13 capturas)
+│   ├── activity3-imagenes-contenedores/
+│   │   ├── README.md
+│   │   └── images/ (10 capturas)
+│   ├── activity4-almacenamiento-redes/
+│   │   ├── README.md
+│   │   └── images/ (12 capturas)
+│   ├── activity5-docker-compose/
+│   │   ├── README.md
+│   │   └── images/ (9 capturas)
+│   └── activity6-creacion-imagenes/
+│       ├── README.md
+│       └── images/ (16 capturas)
 │
 ├── trabajo-1er-trimestre/
 │   ├── Paso1-Apache/
@@ -93,9 +118,8 @@ tareas-despliegue-aplicaciones-web/
     │   │   ├── paso3.png
     │   │   ├── paso4.png
     │   │   ├── paso5.png
-    └──     └── paso6.png
-
-
+    │   │   └── paso6.png
+    └── README.md
 ```
 
 > ✨ *Cada actividad tendrá su propio README con capturas, explicaciones y ejemplos de configuración.*
@@ -114,6 +138,89 @@ tareas-despliegue-aplicaciones-web/
 | **Activity #8** | VirtualHosts | [`activity8`](./tema1-servidores-web/activity8-virtualhost/) |
 | **Activity #9** | Autenticación básica | [`activity9`](./tema1-servidores-web/activity9-authentication/) |
 | **Activity #10** | Certificados y SSL | [`activity10`](./tema1-servidores-web/activity10-ssl/) |
+
+---
+
+## 🐳 **Tema 5 — Docker y Containerización**
+
+📁 **Acceder a:** [`tema5-docker`](./tema5-docker/)
+
+### 📦 **Práctica — Docker: Instalación, Contenedores, Imágenes y Orquestación**
+
+Tema completo dedicado a **Docker**, desde conceptos básicos hasta la creación de imágenes optimizadas y orquestación con Docker Compose.
+
+| Actividad | Descripción | Duración | Nivel | Enlace |
+|----------|-------------|----------|-------|--------|
+| **Activity #1** | Instalación de Docker en Ubuntu 24.04 | 20 min | ⭐ | [`activity1-instalacion-docker`](./tema5-docker/activity1-instalacion-docker/) |
+| **Activity #2** | Introducción a los contenedores | 45 min | ⭐ | [`activity2-introduccion-contenedores`](./tema5-docker/activity2-introduccion-contenedores/) |
+| **Activity #3** | Imágenes y contenedores | 60 min | ⭐⭐ | [`activity3-imagenes-contenedores`](./tema5-docker/activity3-imagenes-contenedores/) |
+| **Activity #4** | Almacenamiento y redes Docker | 90 min | ⭐⭐ | [`activity4-almacenamiento-redes`](./tema5-docker/activity4-almacenamiento-redes/) |
+| **Activity #5** | Docker Compose | 120 min | ⭐⭐⭐ | [`activity5-docker-compose`](./tema5-docker/activity5-docker-compose/) |
+| **Activity #6** | Creación de imágenes Docker | 120 min | ⭐⭐⭐ | [`activity6-creacion-imagenes`](./tema5-docker/activity6-creacion-imagenes/) |
+
+**Características principales:**
+
+✅ **Contenedores Docker**
+- Instalación en Ubuntu 24.04
+- Ciclo de vida del contenedor
+- Ejecución en modo interactivo y detachado
+- Mapeo de puertos y volúmenes
+- Logs y debugging
+
+✅ **Gestión de imágenes**
+- Descargar imágenes desde Docker Hub
+- Crear y nombrar contenedores
+- Listar, inspeccionar y eliminar recursos
+- Historial de capas
+- Tamaño y optimización de imágenes
+
+✅ **Almacenamiento y redes**
+- Volúmenes Docker para persistencia
+- Bind mounts para desarrollo
+- Redes personalizadas
+- Comunicación entre contenedores por nombre
+- Ejemplos prácticos: MySQL, Nginx, phpMyAdmin
+
+✅ **Docker Compose**
+- Definición YAML de aplicaciones multi-contenedor
+- 3 ejemplos: Nginx simple, Stack LEMP, Variables de entorno
+- Gestión de servicios, volúmenes y redes
+- Comandos: up, down, ps, logs, exec
+
+✅ **Creación de imágenes**
+- 5 Dockerfiles prácticos: Python, Node.js, Multi-stage, Best practices, Alpine
+- Optimización de imágenes (reducir tamaño)
+- Mejores prácticas: usuario no-root, .dockerignore, labels
+- Multi-stage builds para producción
+- Comparación de tamaños
+
+✅ **6 actividades completas**
+- 6 READMEs profesionales (550+ líneas totales)
+- 61+ capturas de pantalla integradas
+- 50+ ejemplos prácticos funcionales
+- Documentación técnica detallada
+- Troubleshooting y mejores prácticas
+
+**Contenido incluido:**
+- 📖 README principal del tema (con índice)
+- 📖 6 READMEs específicos (1 por actividad)
+- 📸 61+ capturas de pantalla en carpetas `images/`
+- 🔧 Dockerfiles comentados y listos para usar
+- 📊 Tablas de referencia y comandos
+- 🎯 Checklist de evaluación por actividad
+- 💡 Mejores prácticas y troubleshooting
+
+**Duración total:** 8 horas (distribuidas en 6 actividades)
+
+**Requisitos cumplidos:**
+- ✅ Instalación y configuración de Docker
+- ✅ Ciclo de vida completo de contenedores
+- ✅ Gestión profesional de imágenes
+- ✅ Almacenamiento persistente con volúmenes
+- ✅ Redes Docker personalizadas
+- ✅ Orquestación con Docker Compose
+- ✅ Creación optimizada de imágenes
+- ✅ Aplicaciones multi-contenedor funcionales
 
 ---
 
@@ -236,6 +343,8 @@ sudo ~/servidor-web/scripts/crear_cliente.sh tienda 192.168.1.135
 | 🟪 BIND9 | Servidor DNS local |
 | 🔴 vsftpd | Servidor FTP con TLS |
 | 🔵 OpenSSH | Acceso remoto SSH/SFTP |
+| 🐳 **Docker** | **Containerización** |
+| 🐳 **Docker Compose** | **Orquestación de contenedores** |
 | 🟧 Bash | Scripts de automatización |
 | 🐧 Ubuntu 24.04 LTS | Sistema operativo |
 | 🐍 Python | Aplicaciones WSGI |
@@ -247,12 +356,14 @@ sudo ~/servidor-web/scripts/crear_cliente.sh tienda 192.168.1.135
 ## 📊 **Estadísticas del repositorio**
 
 - **Trimestres documentados:** 2
-- **Tareas completadas:** 15+
+- **Tareas completadas:** 21+
+- **Temas completados:** 2 (Tema 1 + Tema 5)
 - **Prácticas finales:** 2
-- **Líneas de código/configuración:** 5000+
-- **Capturas incluidas:** 20+
-- **README files:** 10+
+- **Líneas de código/configuración:** 8000+
+- **Capturas incluidas:** 80+
+- **README files:** 16+
 - **Scripts bash:** 2+
+- **Dockerfiles:** 5+
 
 ---
 
